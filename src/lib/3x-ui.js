@@ -16,7 +16,15 @@ const agent = new https.Agent({
 export class ThreeXUIClient {
     constructor(serverConfig) {
         this.session = null;
-        this.settings = serverConfig;
+        this.settings = { ...serverConfig };
+
+        // Sanitize panelUrl: remove trailing slashes and accidental '/panel' suffix
+        if (this.settings.panelUrl) {
+            this.settings.panelUrl = this.settings.panelUrl.replace(/\/+$/, '');
+            if (this.settings.panelUrl.endsWith('/panel')) {
+                this.settings.panelUrl = this.settings.panelUrl.slice(0, -6);
+            }
+        }
     }
 
     async login() {
