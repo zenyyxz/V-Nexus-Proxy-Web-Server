@@ -1,0 +1,88 @@
+{
+  "credentials": {
+    "passwordHash": "",
+    "username": "admin"
+  },
+  "regions": [
+    {
+      "id": "india-hyderabad",
+      "name": "🇮🇳 India (Hyderabad)",
+      "enabled": true,
+      "server": {
+        "panelUrl": "",
+        "username": "",
+        "password": "",
+        "inboundId": 0,
+        "publicDomain": ""
+      }
+    },
+    {
+      "id": "singapore",
+      "name": "🇸🇬 Singapore",
+      "enabled": false,
+      "server": {
+        "panelUrl": "",
+        "username": "",
+        "password": "",
+        "inboundId": 0,
+        "publicDomain": ""
+      }
+    },
+    {
+      "id": "us-east",
+      "name": "🇺🇸 US East",
+      "enabled": false,
+      "server": {
+        "panelUrl": "",
+        "username": "",
+        "password": "",
+        "inboundId": 0,
+        "publicDomain": ""
+      }
+    }
+  ],
+  "quota": {
+    "default": 200,
+    "minimum": 100,
+    "maximum": 500
+  },
+  "ui": {
+    "brandName": "V-NEXUS",
+    "primaryColor": "#00cc66",
+    "logoUrl": null
+  },
+  "socialLinks": {
+    "email": "admin@lahirux.dev",
+    "github": "https://github.com/lahirux",
+    "twitter": "https://x.com/lahirux",
+    "telegram": "https://t.me/lahirux"
+  },
+  "content": {
+    "hero": {
+      "title": "Secure Connectivity for the <br /> <span class=\"gradientText\">Modern Web</span>",
+      "subtitle": "Experience the next generation of proxy infrastructure. High-speed, encrypted, and reliable connections deployed instantly.",
+      "ctaText": "Get Connected Now"
+    },
+    "features": [
+      {
+        "id": "speed",
+        "title": "Lightning Fast",
+        "description": "Optimized routing protocols ensure minimal latency and maximum throughput for all your data needs.",
+        "icon": "Zap"
+      },
+      {
+        "id": "security",
+        "title": "Bank-Grade Security",
+        "description": "End-to-end encryption protects your traffic from prying eyes, ensuring complete privacy and security.",
+        "icon": "Shield"
+      },
+      {
+        "id": "global",
+        "title": "Global Network",
+        "description": "Access content from anywhere in the world with our distributed network of high-performance nodes.",
+        "icon": "Globe"
+      }
+    ]
+  },
+  "username": "admin"
+}

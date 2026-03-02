@@ -1,0 +1,30 @@
+{
+    "transports": {
+        "TCP": {
+            "inboundId": 1,
+            "enabled": true,
+            "label": "VLESS + TCP + TLS (Priority / Anti-censorship)"
+        },
+        "WS": {
+            "inboundId": 2,
+            "enabled": true,
+            "label": "VLESS + WS + TLS (Cloudflare-friendly)"
+        },
+        "REALITY": {
+            "inboundId": 3,
+            "enabled": false,
+            "label": "VLESS + TCP + REALITY (Anti-censorship)",
+            "publicKey": ""
+        },
+        "GRPC": {
+            "inboundId": 4,
+            "enabled": false,
+            "label": "VLESS + gRPC + TLS (Mobile Stable)"
+        },
+        "H2": {
+            "inboundId": 5,
+            "enabled": false,
+            "label": "VLESS + H2 + TLS (CDN Alternative)"
+        }
+    }
+}

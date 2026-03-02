@@ -1,0 +1,47 @@
+:root {
+  /* Brand Colors - Professional SaaS */
+  --color-primary: 150 100% 40%;
+  /* Emerald Green #00cc66 */
+  --color-primary-dark: 150 100% 30%;
+  --color-secondary: 210 20% 98%;
+  /* Off-White */
+
+  /* Backgrounds */
+  --color-bg-deep: 220 20% 8%;
+  /* Deep Charcoal/Black #101216 */
+  --color-bg-surface: 220 20% 12%;
+  /* Slightly lighter charcoal */
+  --color-bg-glass: 220 20% 12% / 0.7;
+
+  /* Text */
+  --color-text-main: 0 0% 100%;
+  --color-text-muted: 220 10% 65%;
+
+  /* Status */
+  --color-success: 150 100% 40%;
+  --color-error: 0 80% 60%;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Effects */
+  --blur-glass: 16px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --shadow-glow: 0 0 30px hsl(var(--color-primary) / 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 16, 18, 22;
+    --background-end-rgb: 0, 0, 0;
+  }
+}

@@ -1,0 +1,29 @@
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import ParticleBackground from '@/components/ParticleBackground';
+import BackToTop from '@/components/BackToTop';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const dynamic = 'force-dynamic';
+
+export const metadata = {
+  title: 'V-Nexus - Premium Proxy Infrastructure',
+  description: 'High-speed, encrypted, and reliable proxy connections',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <ParticleBackground />
+        <Navbar />
+        {children}
+        <Footer />
+        <BackToTop />
+      </body>
+    </html>
+  );
+}
